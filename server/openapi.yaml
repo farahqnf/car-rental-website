@@ -1,0 +1,352 @@
+openapi: 3.0.0
+info:
+  title: BINAR Car Rental
+  description: Car Rental RESTful API Documentation
+  version: 0.0.1
+servers:
+  - url: http://localhost:8000
+    description: local
+paths:
+  /register:
+    description: Register new Member
+    post:
+      tags:
+        - Authentication
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  example: farah@mail.com
+                password:
+                  type: string
+                  example: farah123
+      responses:
+        201:
+          description: New Member Created
+          content:
+            application/x-www-form-urlencoded:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: CREATED
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 2
+                      email:
+                        type: string
+                        example: farah@mail.com
+                      password:
+                        type: string
+                        example: farah123
+                      updatedAt: 
+                        type: string
+                        format: date-time
+                      createdAt: 
+                        type: string
+                        format: date-time
+  /login:
+    post:
+      tags:
+        - Authentication
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  example: farah@mail.com
+                password:
+                  type: string
+                  example: farah123
+      responses:
+        200:
+          description: Login Success
+          content:
+            application/x-www-form-urlencoded:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: OK
+                  data:
+                    type: object
+                    properties:
+                      email:
+                        type: string
+                        example: farah@mail.com
+                      token:
+                        type: string
+                        example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IiB1ZGluQG1haWwuY29tIiwicGFzc3dvcmQiOiIgYXNkMTIzIiwiaWF0IjoxNjUyNDYzMzIzfQ.pPRA_IBwHs2PI4yMSyX_PareM0LTNLk43KBKH5Ehg5c
+        400:
+          description: Bad Request
+          content:
+            application/x-www-form-urlencoded:
+              schema:
+                type: object
+                properties:
+                  status: 
+                    type: string
+                    example: FAIL
+                  message:
+                    type: string
+                    example: Email / Password  salah
+  /whoami:
+    get:
+      tags:
+        - Authentication
+      parameters:
+        - name: Authorization
+          in: header
+          description: ID of the requested TaxFiling
+          required: true
+          schema:
+            type
+  /cars/add:
+    post:
+      tags:
+        - CRUD
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                type_name:
+                  type: string
+                  example: Avanza
+                rent_per_day:
+                  type: integer
+                  example: 200000
+                size: 
+                  type: string
+                  example: medium
+                image:
+                  type: string
+                  example: https://www.toyota.astra.co.id/sites/default/files/2021-11/4-avanza-silver-mica-metallic.png
+        
+      responses:
+        201:
+          description: New Car Data Created
+          content:
+            application/x-www-form-urlencoded:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: CREATED
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 2
+                      type_name:
+                        type: string
+                        example: Avanza
+                      rent_per_day:
+                        type: integer
+                        example: 200000
+                      size: 
+                        type: string
+                        example: medium
+                      image:
+                        type: string
+                        example: https://www.toyota.astra.co.id/sites/default/files/2021-11/4-avanza-silver-mica-metallic.png
+                      updatedAt: 
+                        type: string
+                        format: date-time
+                      createdAt: 
+                        type: string
+                        format: date-time
+  /cars:
+    get:
+      tags:
+        - CRUD
+      responses:
+        200:
+          description: List of all cars data
+          content:
+            application/x-www-form-urlencoded:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: OK
+                  data:
+                    type: array
+                    items:
+                      oneOf:
+                        - type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 2
+                            type_name:
+                              type: string
+                              example: Avanza
+                            rent_per_day:
+                              type: integer
+                              example: 200000
+                            size: 
+                              type: string
+                              example: medium
+                            image:
+                              type: string
+                              example: https://www.toyota.astra.co.id/sites/default/files/2021-11/4-avanza-silver-mica-metallic.png
+                            updatedAt: 
+                              type: string
+                              format: date-time
+                            createdAt: 
+                              type: string
+                              format: date-time
+                        - type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 3
+                            type_name:
+                              type: string
+                              example: BMW
+                            rent_per_day:
+                              type: integer
+                              example: 500000
+                            size: 
+                              type: string
+                              example: small
+                            image:
+                              type: string
+                              example: https://www.bmw.co.id/content/dam/bmw/common/all-models/i-series/i4/navigation/bmw-i4-mini-landingpage-modelfinder.png
+                            updatedAt: 
+                              type: string
+                              format: date-time
+                            createdAt: 
+                              type: string
+                              format: date-time
+  /cars/update/{id}:
+    post:
+      tags:
+        - CRUD
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+            example: 1
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                type_name:
+                  type: string
+                  example: Avanza
+                rent_per_day:
+                  type: integer
+                  example: 200000
+                size: 
+                  type: string
+                  example: medium
+                image:
+                  type: string
+                  example: https://www.toyota.astra.co.id/sites/default/files/2021-11/4-avanza-silver-mica-metallic.png
+      responses: 
+        200:
+          description: Data Updated
+          content:
+            application/x-www-form-urlencoded:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: OK
+  /cars/delete/{id}:
+    get:
+      tags:
+        - CRUD
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+            example: 1
+      responses:
+        200:
+          description: Data deleted
+          content:
+            application/x-www-form-urlencoded:
+              schema:
+                type: integer
+                example: 1
+  /cars/{id}:
+    get:
+      tags:
+        - CRUD
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+            example: 1
+      responses:
+        200:
+          description: Login Success
+          content:
+            application/x-www-form-urlencoded:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: OK
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 2
+                      type_name:
+                        type: string
+                        example: Avanza
+                      rent_per_day:
+                        type: integer
+                        example: 200000
+                      size: 
+                        type: string
+                        example: medium
+                      image:
+                        type: string
+                        example: https://www.toyota.astra.co.id/sites/default/files/2021-11/4-avanza-silver-mica-metallic.png
+                      updatedAt: 
+                        type: string
+                        format: date-time
+                      createdAt: 
+                        type: string
+                        format: date-time
+                      
+  
+      
+  
+                    
+                  
+        
+        
+                      

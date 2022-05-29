@@ -1,0 +1,25 @@
+{
+  "name": "fsw3-challenge3-farahqatrunnada",
+  "version": "1.0.0",
+  "description": "- Mulai modifikasi file `server/index.js` apabila ingin membuat HTTP server.\r - Mulai modifikasi folder `public` apabila ingin memodifikasi HTML.",
+  "main": "server/index.js",
+  "dependencies": {
+    "bootstrap-icons": "^1.8.1",
+    "mime-types": "^2.1.35"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/qatrunnadafarah/fsw3-challenge3-farahqatrunnada.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/qatrunnadafarah/fsw3-challenge3-farahqatrunnada/issues"
+  },
+  "homepage": "https://gitlab.com/qatrunnadafarah/fsw3-challenge3-farahqatrunnada#readme",
+  "keywords": []
+}

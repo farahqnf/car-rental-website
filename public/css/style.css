@@ -1,0 +1,672 @@
+ul {
+    overflow: hidden;
+    list-style: none;
+}
+
+.linv a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.linv a:hover {
+    background-color: #5CB85F;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+}
+
+#btnsw{
+    padding-bottom: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+    #btnsw{
+        padding-bottom: 68px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 212px;
+        margin-left: 74px;
+    }
+  }
+
+.liwhy{
+    margin-bottom: 16px;
+}
+
+body {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    background: #FFFFFF;
+}
+
+.sewa{
+    background-color: #F1F3FF;
+    padding-top: 30px;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.sec1 button.btn{
+background-color: #5CB85F;
+color: #FFFFFF;
+padding: 8px 12px;
+}
+
+button.btn:hover{
+    color:#FFFFFF;
+}
+
+#logo {
+    width: 100px;
+    height: 34px;
+}
+
+#register {
+    background-color:#5CB85F;
+    border-radius: 2px;
+}
+
+#landing-page h1 {
+    font-size: 54px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    margin: 0;
+}
+
+#landing-page h4 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    margin: 0;
+}
+
+.car {
+    position: relative;
+    height: 407px;
+    width: max-content;
+    right: -60px;
+}
+
+@media screen and (max-width: 576px) {
+    .car {
+        height: 199px;
+        width: max-content;
+        right: 0;
+        top: 97px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .girl {
+        height: 228px;
+        width: max-content;
+        right: 0;
+        top: 97px;
+        display: flex;
+        align-items: center;
+        margin-left: 65px;
+    }
+  }  
+
+#our-sevices li{
+    display: flex;
+    align-self: center;
+    margin-bottom: 16px;
+}
+
+#why-us h3 {
+    height: 36px;
+    color: black;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0;
+}
+
+@media screen and (max-width: 576px) {
+    #why-us h3 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#why-us h4 {
+    width: 468px;
+    height: 20px;
+    color: black;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 16px 0 40px 0;
+}
+
+@media screen and (max-width: 576px) {
+    #why-us h4 {
+        display: flex;
+        justify-content: center;
+        margin: 16px 0 20px 0;
+    }
+}
+
+#why-us h5 {
+    margin-bottom: 16px;
+}
+
+.card img {
+    width: 32px;
+    height: 32px;
+    left: 10px;
+    margin-bottom: 16px;
+}
+
+section{
+    margin-bottom: 70px;
+}
+
+.card {
+    padding: 24px;
+    border: 1px solid #D0D0D0;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow:  8px 8px 16px #e3e3e3,-8px -8px 16px #ffffff;
+    margin: 10px 0 10px 0;
+    height: 196px;
+}
+
+#why-us .card-text {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding-right: 40px;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+#carousel {
+    height: 422px;
+    top: 50px;
+}
+
+@media screen and (max-width: 576px) {
+    #carousel {
+        width: 400px;
+        height: 500px;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-left: 35px;
+    }
+}
+
+.carousel-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+    .carousel-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+    }
+}
+
+#carousel-title h3 {
+    height: 36px;
+    color: black;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0;
+}
+
+#carousel-title h4 {
+    width: 468px;
+    height: 20px;
+    color: black;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 16px 0 40px 0;
+}
+
+.carousel-inner {
+    background: #F1F3FF;
+    width: 619px;
+    height: 270px;
+    border-radius: 8px;
+    box-shadow:  8px 8px 16px rgba(0, 0, 0, 0.15) ,-8px -8px 16px #ffffff;
+}
+
+@media screen and (max-width: 576px) {
+    .carousel-inner {
+        background: #F1F3FF;
+        width: 390px;
+        height: 350px;
+        border-radius: 8px;
+        box-shadow:  8px 8px 16px rgba(0, 0, 0, 0.15) ,-8px -8px 16px #ffffff;
+    }
+}
+
+.carousel-body img {
+    margin: 0 46px;
+}
+
+@media screen and (max-width: 576px) {
+    .carousel-body img {
+        margin: 0 0 24px 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel-text p {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel-text {
+        margin: 0;
+    }
+}
+
+.carousel-body {
+    margin: 65px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 576px) {
+    .carousel-body {
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.kiri{
+    height: 32px;
+    width: auto;
+    padding: 10px;
+}
+
+.kanan{
+    height: 32px;
+    width: auto;
+    padding: 10px;
+}
+
+.sewabox {
+    background: #0D28A6 ;
+    border-radius: 13px;
+    box-shadow:  8px 8px 16px #e3e3e3,
+    -8px -8px 16px #ffffff;
+}
+
+@media screen and (max-width: 576px) {
+    .sewabox {
+        height: 400px;
+        width: 390px;
+        background: #0D28A6 ;
+        border-radius: 13px;
+        box-shadow:  8px 8px 16px #e3e3e3,
+        -8px -8px 16px #ffffff;
+        display: flex;
+        align-items: center;
+        
+    }
+}
+
+
+#get-start h1 {
+    padding: 64px 0 16px 0;
+    margin: 0;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+}
+
+@media screen and (max-width: 576px) {
+    #get-start h1 {
+        font-size: 24px;
+    }
+}
+
+#get-start h2 {
+    width: 468px;
+    height: 40px;
+    margin: 0;
+    margin-bottom: 52px;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 576px) {
+    #get-start h2 {
+        width: 212px;
+        margin-bottom: 70px;
+        font-weight: 300;
+    }
+}
+
+#get-start .btn {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+
+    background: #5CB85F;
+    border-radius: 1px;
+}
+
+#faq {
+    height: 344px;
+}
+
+#faq h1 {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+#faq h3 {
+    height: 40px;
+    margin: 0;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#faq .btn {
+    width: 100%;
+    height: 56px;
+    margin-bottom: 16px;
+}
+
+.dropdown-menu {
+    width: 40%;
+    padding: 20px;
+    border-color: #D0D0D0;
+}
+
+#faq .btn h1 {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+
+@media screen and (max-width: 576px) {
+    #faq .tulisan {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #footer {
+        margin: 0 5px;
+        width: 80%;
+        margin-bottom: 60px;
+    }
+}
+
+/* ///////////////// STYLE CARI MOBIL ////////////////////////// */
+
+.daftar-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.daftar-box {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    width: 1047px;
+    height: 106px;
+}
+
+@media screen and (max-width: 576px) {
+    .daftar-box {
+        background: #F1F3FF;
+        width: 390px;
+        height: 350px;
+        border-radius: 8px;
+        box-shadow:  8px 8px 16px rgba(0, 0, 0, 0.15) ,-8px -8px 16px #ffffff;
+    }
+}
+
+.daftar {
+    width: 210.75px;
+    height: 36px;
+    font-size: 12px;
+    border-color: #5CB85F;
+    margin: 24px 8px 0 0;
+}
+
+#penumpang {
+    position: relative;
+    left: -30px;
+    z-index: 1;
+}
+
+#date {
+    position: relative;
+    left: -29px;
+    top: 9px;
+    z-index: 1;
+}
+
+.daftar-driver {
+    width: 210.75px;
+    height: 36px;
+    font-size: 12px;
+    border-color: #5CB85F;
+    /* margin: 24px 8px 0 8px; */
+    border-radius: 2px;
+
+    /* width: 100%;
+    height: 36px;
+    padding: 20px;
+    margin: 0;
+    background: #FFFFFF;
+    border-radius: 2px;
+    padding: 6px 12px; */
+}
+
+.daftar .btn {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 16px;
+    background: #FFFFFF;
+    border: 1px solid #5CB85F;
+    border-radius: 2px;
+
+}
+
+#dropdown1 {
+    width: 100%;
+    height: 36px;
+    padding: 20px;
+    margin: 0;
+    background: #FFFFFF;
+    /* box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1); */
+    border-radius: 2px;
+    padding: 6px 12px;
+}
+
+#cari-mobil {
+    position: relative;
+    top: -110px;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#cari-mobil .btn h1 {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.dropdown-item {
+    margin: 10px 11px;
+    padding: 0;
+    width: 188.75px;
+}
+
+#cari {
+    width: 92px;
+    height: 36px;
+    margin: 22px 4px 24px 16px;
+    background-color: #5CB85F;
+    color: white;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0;
+    width: 209px;
+}
+
+.dropdown input {
+    border: 1px solid #5CB85F;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 210.75px;
+    padding-right: 80px;
+}
+
+#exampleInputEmail1 {
+    padding-right: 10px;
+    font-size: 12px;
+    margin: 0;
+}
+
+#hasil-pencarian {
+    margin-top: -50px;
+    padding: 0 5px;
+}
+
+#hasil-pencarian img {
+    width: auto;
+    height: 160px;
+    left: 16px;
+    margin-top: 31px;
+    margin-left: 5px;
+    margin-bottom: 47px;
+    align-self: center;
+}
+
+#hasil-pencarian .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+
+    position: static;
+    width: 333px;
+    height: 586px;
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+#hasil-pencarian h2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+#hasil-pencarian h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+#hasil-pencarian p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+#hasil-pencarian .btn {
+    width: 285px;
+    height: 48px;
+    background: #5CB85F;
+    border-radius: 2px;
+    margin: 24px 0 0 0;
+}
+
+#hasil-pencarian a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}

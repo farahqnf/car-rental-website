@@ -1,0 +1,140 @@
+.daftar-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.daftar-box {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    width: 1047px;
+    height: 106px;
+}
+
+@media screen and (max-width: 576px) {
+    .daftar-box {
+        background: #F1F3FF;
+        width: 390px;
+        height: 350px;
+        border-radius: 8px;
+        box-shadow:  8px 8px 16px rgba(0, 0, 0, 0.15) ,-8px -8px 16px #ffffff;
+    }
+}
+
+.daftar {
+    width: 210.75px;
+    height: 36px;
+    font-size: 12px;
+    border-color: #5CB85F;
+    margin: 24px 8px 0 0;
+}
+
+#penumpang {
+    position: relative;
+    left: -30px;
+    z-index: 1;
+}
+
+#date {
+    position: relative;
+    left: -29px;
+    top: 9px;
+    z-index: 1;
+}
+
+.daftar-driver {
+    width: 210.75px;
+    height: 36px;
+    font-size: 12px;
+    border-color: #5CB85F;
+    /* margin: 24px 8px 0 8px; */
+    border-radius: 2px;
+
+    /* width: 100%;
+    height: 36px;
+    padding: 20px;
+    margin: 0;
+    background: #FFFFFF;
+    border-radius: 2px;
+    padding: 6px 12px; */
+}
+
+.daftar .btn {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 16px;
+    background: #FFFFFF;
+    border: 1px solid #5CB85F;
+    border-radius: 2px;
+
+}
+
+#dropdown1 {
+    width: 100%;
+    height: 36px;
+    padding: 20px;
+    margin: 0;
+    background: #FFFFFF;
+    /* box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1); */
+    border-radius: 2px;
+    padding: 6px 12px;
+}
+
+#cari-mobil {
+    position: relative;
+    top: -110px;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#cari-mobil .btn h1 {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.dropdown-item {
+    margin: 10px 11px;
+    padding: 0;
+    width: 188.75px;
+}
+
+#cari {
+    width: 92px;
+    height: 36px;
+    margin: 22px 4px 24px 16px;
+    background-color: #5CB85F;
+    color: white;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0;
+    width: 209px;
+}
+
+.dropdown input {
+    border: 1px solid #5CB85F;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 210.75px;
+    padding-right: 80px;
+}
+
+#exampleInputEmail1 {
+    padding-right: 10px;
+    font-size: 12px;
+    margin: 0;
+}
